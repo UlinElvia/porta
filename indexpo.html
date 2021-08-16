@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>module 5 </title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--agregue funete de Google fonts-->
+<link href = "https: //fonts.googleapis.com/css2? family = Oxygen + Mono & display = swap "rel =" stylesheet ">
+</head>
+<body>
+<!--encabezado-->
+<header>
+	<!--una clase y el otro es como una subclase q usa la clase base-->
+	<!--aqui es donde definiremos en color id-->
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container-fluid">
+			<!--una clase de conten,aveces flota-->
+<!--e-->			<div class="navbar-header">
+			<a href="index.html" class="pull-left visible-md visible-lg">
+				<!--acá ira nuestro logo 1-->
+            <div id="logo-img"></div>
+			</a>
+			<!--booststrap, cualquier marca como nombre de la empresa de estar en este navbar-->
+			<div class="navbar-brand">
+				<!--nombre de restaurantes-->
+				<a href="index.html"> <h1>Restaurante Albamar</h1></a>
+			
+			<p>
+				<!--acá ira nuestro logo 2-->
+				<img src="img/albam.png" alt="Albamar certified" width="80" height="65">
+				<span>Albamar certified</span>
+			</p>
+            </div>
+           <!--av.to controla el posicionamiento de todo este boton--><!--y agregamos nuestro boton-->
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false"><!--aria,son para lectores de pantalla-->
+            <span class="sr-only">Toggle navigation</span>
+            <!--poner los iconos-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          </div><!--acá termina el encabezado-->
+
+          <!--los menus, div va contener todos los elementos para estos-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+               <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a><!--glyphicon(fuente de iconos)-->
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Acerca de nosotros</a><!--xs, desaparecera cuando sea extra peque)-->
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Premios</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:5800-0010">
+                <span>410-602-5008</span></a><div>* We Deliver</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .navbar--->
+
+
+		</div>
+	</nav>
+</header>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
